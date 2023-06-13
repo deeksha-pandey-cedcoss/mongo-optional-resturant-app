@@ -1,0 +1,21 @@
+<body class="bg-secondary text-white"></body>
+<hr>
+<h1 class="text-center"><u>Orders </u></h1>
+<?php
+
+echo " <section class='blogs-section'>";
+foreach ($data as  $value) {
+
+  echo "<div class='blog-card '>";
+  echo "<img src='" . $value->img . "' class='blog-image' alt='' width='20%'/>";
+  echo "<u><h1 class='blog-title'>Resturant Name:" . $value->rname . "</h1>";
+  echo "<h3 class='blog-overview'>Customer Name:" . $value->cname . "</h3>";
+  echo "<p class='blog-overview'>Price:" . $value->price . "</p>";
+  echo "<p class='blog-overview'>Ratings:" . $value->caddress . "</p></u>";
+  echo "
+    <i class='fa-solid fa-heart'>
+    </i></a></div></br>";
+}
+echo "</section>";
+?>
+</section>

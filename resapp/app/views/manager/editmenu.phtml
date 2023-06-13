@@ -1,0 +1,35 @@
+<hr>
+<h1 class="text-center">Add Restaurant's Menu in this app</h1>
+    <form action="/manager/updatemenu" method="POST">
+    <div class="form-group">
+    <label for="exampleInputEmail1">Rid</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="rid"  value="<?php echo $data->rid?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Fid</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="fid"  value="<?php echo $data->fid?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Food Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="fname"  value="<?php echo $data->fname?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Food cuisine type</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="type"   value="<?php echo $data->type?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Food price</label>
+    <input type="text" class="form-control"  name="fprice"  value="<?php echo $data->fprice?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Food details image</label>
+    <input type="text" class="form-control"  name="img"  value="<?php echo $data->img?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Food ratings</label>
+    <input type="text" class="form-control"  name="ratings"  value="<?php echo $data->ratings?>">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    <hr>

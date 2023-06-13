@@ -1,0 +1,24 @@
+<body class="bg-secondary text-white"></body>
+<hr>
+<h1 class="text-center"><u>Food Menu of the respective Restaurant</u></h1>
+<?php
+$collection = $this->mongo->food;
+$data = $collection->find(['rid' => $_GET['id']]);
+echo " <section class='blogs-section'>";
+  foreach ($data as  $value) {
+
+    echo "<div class='blog-card '>";
+    echo "<img src='" . $value->img . "' class='blog-image' alt='' width='20%'/>";
+    echo "<u><h1 class='blog-title'>Name:" . $value->fname . "</h1>";
+    echo "<h3 class='blog-overview'>Type:" .$value->type . "</h3>";
+    echo "<p class='blog-overview'>Price:$" .$value->fprice . "</p>";
+    echo "<p class='blog-overview'>Ratings:" .$value->ratings . "/10</p></u>";
+    echo "<a href='/order/placeorder?fid=" . $value->fid . "&&rid=$value->rid'
+    class='btn btn-info'>Place Order</a>&nbsp&nbsp";
+    echo "
+    <i class='fa-solid fa-heart'>
+    </i></a></div></br>";
+  }
+  echo "</section>";
+  ?>
+  </section>

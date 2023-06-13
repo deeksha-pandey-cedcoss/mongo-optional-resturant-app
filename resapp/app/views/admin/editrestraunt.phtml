@@ -1,0 +1,36 @@
+<hr>
+    <h1 class="text-center">Edit Restaurants details in this app</h1>
+    <form action="/admin/updateresturant" method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Rid</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="rid" value="<?php echo $data->rid?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Restaurant Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="rname"  value="<?php echo $data->rname?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Restaurant cuisine</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="cuisine"  value="<?php echo $data->cuisine?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Restaurant address</label>
+    <input type="text" class="form-control"  name="raddress" value="<?php echo $data->raddress?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Restaurant Manager details</label>
+    <input type="text" class="form-control"  name="rmanager" value="<?php echo $data->rmanager?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">REstaurant details image</label>
+    <input type="text" class="form-control"  name="img" value="<?php echo $data->img?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Restaurant ratings</label>
+    <input type="text" class="form-control"  name="ratings" value="<?php echo $data->ratings?>">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+    <hr>
